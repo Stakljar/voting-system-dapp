@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  background-image: linear-gradient(rgb(0, 56, 64), rgb(13, 139, 158));
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  margin: 50px 10px;
+}
+
+.container>div>div {
+  margin: auto;
+}
+
+.login {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.login-button {
+  border-radius: 8px;
+  width: 200px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.login-button:hover {
+  border-color: #646cff;
+}
+.login-button:focus,
+.login-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.login-button>img {
+  width: 40px;
+  height: 40px;
+}
+
+.login-button>div {
+  margin-top: 5px;
+}
+
+.account-details {
+  text-align: left;
+  padding-left: 25px;
+  display: block;
+  font-size: 1.0rem;
+  padding-bottom: 10px;
+}
+
+.notice {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.candidates-table {
+  margin: auto;
+  width: 30%;
+}
+
+.vote-placed {
+  margin-bottom: 40px;
+}
+
+.spinner {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.timer {
+  margin-bottom: 50px;
+}
+
+.timer>span {
+  font-size: 1.5rem;
+}
+
+.datepicker-form {
+  margin: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .candidates-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .candidates-table {
+    width: 90%;
+  }
+}
