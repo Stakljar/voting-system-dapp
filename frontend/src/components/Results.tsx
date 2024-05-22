@@ -16,7 +16,7 @@ export default function Results({ isOwner, candidates, endTime }: ResultsProps) 
   const state = {
     series: [{
       name: 'Votes',
-      data: candidates.map((value) => Number(value.voteCount)),
+      data: candidates.map((candidate) => Number(candidate.voteCount)),
     }],
     options: {
       yaxis: {
