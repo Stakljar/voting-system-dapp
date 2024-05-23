@@ -22,7 +22,6 @@ export const contractAddress: string
 Navigate to the frontend directory and type:
 ```shell
 npm run dev
-npm start
 ```
 
 <!---
