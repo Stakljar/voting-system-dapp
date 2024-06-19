@@ -31,7 +31,7 @@ export default function Voting({ hasVoted, candidates, endTime, setContractData 
       title: 'Select',
       key: 'select',
       render: (record: any) => (
-        <Button disabled={hasVoted} onClick={() => setCandidateIndex(record.key - 1)} type='primary'>Vote</Button>
+        <Button disabled={hasVoted || candidateIndex !== null} onClick={() => setCandidateIndex(record.key - 1)} type='primary'>Vote</Button>
       ),
       align: 'center' as AlignType,
     },
