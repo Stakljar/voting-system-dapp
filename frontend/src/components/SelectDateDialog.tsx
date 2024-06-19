@@ -26,7 +26,7 @@ export default function SelectDateDialog({ isModalOpen, setIsModalOpen, newVotin
     >
       <Form form={form} className='datepicker-form' variant='filled' style={{ maxWidth: 600 }}>
         <Form.Item key={0} label='Date' name='DatePicker' rules={[{ required: true, message: 'Please insert date' }]}>
-          <DatePicker showTime format='DD.MM.YYYY. HH:mm:ss' disabledDate={(current) => {
+          <DatePicker disabled={newVotingTime !== null} showTime format='DD.MM.YYYY. HH:mm:ss' disabledDate={(current) => {
               return current && current < dayjs().endOf('day')
             }} 
           />
