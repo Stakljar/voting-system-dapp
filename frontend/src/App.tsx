@@ -162,7 +162,7 @@ export default function App() {
                               endTime={contractData.endTime!}
                             /> :
                             <Voting hasVoted={contractData.hasVoted} candidates={contractData.candidates!}
-                              endTime={contractData.endTime!} setContractData={setContractData}
+                              endTime={contractData.endTime!}
                             />
                       }
                     </> :

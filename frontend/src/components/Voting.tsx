@@ -1,7 +1,7 @@
 import { Button, Table, Spin } from 'antd'
 import { ethers } from 'ethers'
 import { useContext, useEffect, useState } from 'react'
-import { ContractData, ContractInteractionDataContext, type Candidate } from '../App'
+import { ContractInteractionDataContext, type Candidate } from '../App'
 import { AlignType } from 'rc-table/lib/interface'
 import Countdown from 'react-countdown'
 import Notice from './Notice'
@@ -10,10 +10,9 @@ type VotingProps = {
   hasVoted: boolean,
   candidates: Candidate[],
   endTime: bigint,
-  setContractData: React.Dispatch<React.SetStateAction<ContractData>>,
 }
 
-export default function Voting({ hasVoted, candidates, endTime, setContractData }: VotingProps) {
+export default function Voting({ hasVoted, candidates, endTime }: VotingProps) {
   const columns = [
     {
       title: 'Index',
@@ -49,7 +48,6 @@ export default function Voting({ hasVoted, candidates, endTime, setContractData 
       try {
         const tx = await contractInteractionData.contract!.vote(candidateIndex)
         await tx.wait()
-        setContractData((prev) => { return { ...prev, hasVoted: true } })
       }
       catch (error) {
         // @ts-ignore
