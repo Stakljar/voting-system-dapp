@@ -1,9 +1,8 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 import { ethers } from "ethers";
 
-const VOTING_TIME: number = 864_000;
-
 const VotingModule = buildModule("VotingModule", (m) => {
+  const VOTING_TIME: number = 864_000;
   const voting = m.contract("Voting", [
     [
       ethers.encodeBytes32String("William Black"), ethers.encodeBytes32String("Ryan Boyd"), ethers.encodeBytes32String("Derek Smith"),
