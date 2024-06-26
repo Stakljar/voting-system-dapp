@@ -5,6 +5,10 @@ Using this application you need to use Ethereum wallets to interact with the blo
 Main technologies used: Hardhat, Solidity, Vite with React Typescript and ethers.js.
 
 ## How to run
+Clone the repository:
+```shell
+git clone https://github.com/Stakljar/voting-system-dapp.git
+```
 Inside root directory type:
 ```shell
 npm install
