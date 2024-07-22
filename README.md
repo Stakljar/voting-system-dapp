@@ -1,5 +1,5 @@
 # voting-system-dapp
-Decentralized voting system application where you can vote for candidates, view results andrestart voting
+Decentralized voting system application where you can vote for candidates, view results and restart voting
 if you are on deployer's account and voting results are undecided.
 Using this application you need to use Ethereum wallets to interact with the blockchain.
 Main technologies used: Hardhat, Solidity, Vite with React Typescript and ethers.js.
