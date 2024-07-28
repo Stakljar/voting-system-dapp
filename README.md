@@ -13,7 +13,7 @@ Inside root directory type:
 ```shell
 npm install
 ```
-Navigate to frontend directory and type the same thing.
+Navigate to the _frontend_ directory and type the same thing.
 Then navigate back to the root directory and type:
 ```shell
 npx hardhat node
@@ -23,7 +23,7 @@ Set the following variable to match the deployed contract address:
 ```typescript
 export const contractAddress: string
 ```
-Navigate to the frontend directory and type:
+Navigate to the _frontend_ directory and type:
 ```shell
 npm run dev
 ```
